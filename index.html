@@ -4,13 +4,102 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Create Project</title>
+
+  <link rel="shortcut icon" href="img/work.svg" type="image/x-icon">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
   <!-- stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <!-- <div class="container">
+      <!- SITE TITLE ->
+      <h1 class="site-title">Create your project</h1>
+    </div> -->
+    <div class="site-header-container container">
+      <a class="site-header-logo" href="index.html">Create your project</a>
+
+      <button class="site-header-theme-toogler" type="button">
+        <span class="site-header-theme-toogler-inner">
+          <svg class="site-header-theme-toogler-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#fff" fill-rule="evenodd" stroke="currentColor" stroke-width="1.25" d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z" clip-rule="evenodd"></path></svg>
+          <span class="site-header-theme-toogler-text">Dark mode</span>
+        </span>
+      </button>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="container">
+
+      <!-- FIGMA LINKS -->
+      <div class="dropdown mb-4">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Figma linkleri
+        </a>
+        <ul class="dropdown-menu">
+          <!-- <li>
+            <a class="dropdown-item" href="https://www.figma.com/file/dXz3VDypeAWLRMj3sKEeRZ/Coffeeroasters-(Copy)?node-id=1%3A4622" target="_blank">Coffe Roaster</a>
+          </li> -->
+        </ul>
+      </div>
+      <!-- LIST -->
+      <ul class="project-abaut-list">
+        <!-- ITEM GIT-HUB -->
+        <li class="project-abaut-item">
+          <a class="link site-github-link" href="https://github.com/new" target="_blank">Github</a> tag'i starter shabloninan paydalanip <strong>Repository</strong> jaratiw.
+        </li>
+        <li class="project-abaut-item">
+          <a class="link site-github-link" href="https://app.netlify.com/teams/baxtibay/overview" target="_blank">Netlify</a>g'a maketimizdi jaylaw.
+        </li>
+        <li class="project-abaut-item">
+          <input class="form-control" id="figma" name="figma_link" type="text" value="" placeholder="Figma linkin kiritin'" >
+          <a class="link site-github-link" id="figma-el" href="#" target="_blank">Maketke kiriw</a>
+        </li>
+        <li class="project-abaut-item">
+          Figmadan Shrift atlarin tabiw
+        </li>
+        <li class="project-abaut-item">
+          <div class="mb-3">
+            <input type="text" id="shrifts" class="form-control" name="shrift_name" placeholder="Shrift atin jazin'">
+          </div>
+        </li>
+        <li class="project-abaut-item">
+          <a class="link" id="google_font" href="https://fonts.google.com/" target="_blank">Google fonts</a> tan shrift izlew
+        </li>
+        <li class="project-abaut-item">
+          <a class="link " href="https://transfonter.org/" target="_blank">Shriftti optimallastiriw</a>
+        </li>
+        <li class="project-abaut-item">
+          Shriftti project ke qosiw
+        </li>
+        <li class="project-abaut-item">
+          Maketti ko'rip shig'ip shrift o'lshemin <strong>body</strong> tegine beriw
+        </li>
+        <li class="project-abaut-item">
+          Kerekli ren'lerdi o'zgeriwshige aliw
+        </li>
+        <li class="project-abaut-item">
+          Kerekli su'wretlerdi figmadan ju'klep aliw
+        </li>
+        <!-- SHRIFT OPTIMIZE -->
+        <li class="project-abaut-item">
+          Su'wretlerdi Optimallastiriw
+          <a class="link" href="https://tinypng.com/" target="_blank">PNG-JPG, JPEG</a>
+        </li>
+        <li class="project-abaut-item">
+          Su'wretlerdi Optimallastiriw
+          <a class="link" href="https://jakearchibald.github.io/svgomg/" target="_blank">SVG</a>
+        </li>
+      </ul>
+    </div>
+  </main>
 
 
   <script src="js/main.js"></script>

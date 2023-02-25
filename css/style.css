@@ -1,3 +1,12 @@
+/* CUSTOM PROPS */
+:root {
+  --body-bg: #fafafa;
+  --element-bg: #fff;
+  --text-color: #111517;
+  --transition-duration: 0.4s;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -20,8 +29,10 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  transition: background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease;
 }
 
 img {
@@ -36,4 +47,116 @@ img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* DARK-MODE */
+.dark-mode {
+  --body-bg: #202c36;
+  --element-bg: #2b3844;
+  --text-color: #fff;
+}
+
+
+/* HEADER  */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  margin-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--element-bg);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
+  transition: background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-logo {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.site-header-logo:hover {
+  opacity: 0.8;
+}
+
+.site-header-logo:active {
+  opacity: 0.6;
+}
+
+.site-header-theme-toogler {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.site-header-theme-toogler:hover {
+  opacity: 0.8;
+}
+
+.site-header-theme-toogler:active {
+  opacity: 0.6;
+}
+
+.site-header-theme-toogler-inner {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-theme-toogler-icon {
+  color: var(--text-color);
+}
+
+.site-header-theme-toogler-text {
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.site-title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #03a9f4;
+}
+
+.project-abaut-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+.project-abaut-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  transition: background-color var(--transition-duration) ease,
+  color var(--transition-duration) ease;
+}
+
+input[type="text"]::placeholder {
+  color: var(--text-color);
+}
+
+input:focus {
+  background-color: var(--body-bg)!IMPORTANT;
+  color: var(--text-color)!IMPORTANT;
 }
