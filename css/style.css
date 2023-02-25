@@ -41,7 +41,7 @@ img {
 }
 
 .link {
-  text-decoration-color: #000;
+  text-decoration-color: var(--text-color);
 }
 
 
