@@ -40,6 +40,10 @@ img {
   height: auto;
 }
 
+.link {
+  text-decoration-color: #000;
+}
+
 
 /* CONTAINER  */
 .container {
