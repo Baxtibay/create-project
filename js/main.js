@@ -1,5 +1,4 @@
-const figmaInput = document.querySelector('#figma'),
-  figmaEl = document.querySelector('#figma-el'),
+const figmaEl = document.querySelector('#figma-el'),
   shrift = document.querySelector('#shrifts'),
   googleFont = document.querySelector('#google_font'),
   dropMenu = document.querySelector('.dropdown-menu'),
@@ -30,10 +29,7 @@ figmaLinks().forEach(item => {
   dropMenu.append(li);
 })
 
-figmaInput.addEventListener('input', () => {
-  figmaEl.href = `${figmaInput.value}`
-})
-
+// Generate fonts from Google-Fonts
 shrift.addEventListener('input', () => {
   googleFont.href = `https://fonts.google.com/?query=${shrift.value}`
 })
