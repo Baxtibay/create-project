@@ -62,6 +62,12 @@ img {
 }
 
 
+/* MAIN-CONTENT */
+.main-content {
+  padding-bottom: 50px;
+}
+
+
 /* HEADER  */
 .site-header {
   position: sticky;
