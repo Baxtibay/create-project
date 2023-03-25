@@ -170,3 +170,15 @@ input:focus {
   background-color: var(--body-bg)!IMPORTANT;
   color: var(--text-color)!IMPORTANT;
 }
+
+.closeContent::after {
+  position: relative;
+  top: 2px;
+  left: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/close.svg");
+  background-size: cover;
+  content: ""
+}

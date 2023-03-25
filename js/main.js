@@ -2,7 +2,11 @@ const figmaEl = document.querySelector('#figma-el'),
   shrift = document.querySelector('#shrifts'),
   googleFont = document.querySelector('#google_font'),
   dropMenu = document.querySelector('.dropdown-menu'),
-  elThemeToggler = document.querySelector('.site-header-theme-toogler');
+  elThemeToggler = document.querySelector('.site-header-theme-toogler'),
+  picInputWidthVal = document.querySelector('.picInputWidth'),
+  picInputHeightVal = document.querySelector('.picInputHeight'),
+  pickSearch = document.querySelector('#pick-search'),
+  closeBtn = document.querySelector('#close');
 
 // Figma links
 const figmaLinks = () => [
@@ -37,4 +41,22 @@ shrift.addEventListener('input', () => {
 // Dark Mode
 elThemeToggler.addEventListener('click', function() {
   document.body.classList.toggle('dark-mode')
+})
+
+// Picture Input
+
+function inputNumber(inputName) {
+  inputName.addEventListener('input', () => {
+    pickSearch.href = `https://picsum.photos/${picInputWidthVal.value}/${picInputHeightVal.value}`
+    pickSearch.textContent = `https://picsum.photos/${picInputWidthVal.value}/${picInputHeightVal.value}`
+  })
+}
+inputNumber(picInputHeightVal)
+
+// Close
+closeBtn.addEventListener('click', () => {
+  pickSearch.textContent = 'Search'
+  pickSearch.href = 'https://picsum.photos/images'
+  picInputWidthVal.value = ''
+  picInputHeightVal.value = ''
 })
