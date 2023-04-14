@@ -22,6 +22,7 @@ const figmaLinks = () => [
   {link: 'https://www.youtube.com/watch?v=zsBiW0_TlGE', name: 'Kinoteatrga chipta olish maket - 2-qism'},
   {link: 'https://youtube.com/playlist?list=PL3LQJkGQtzc56HquxrkwPdQt9Q1wHm21P', name: "CSSda transform, transition va position xususiyatlari bo'yicha qo'shimcha videodarslar (ko'rish shart!)"},
   {link: 'https://www.figma.com/file/NlZpfGCKKA7W6NfTELbvOC/job-listings-with-filtering?node-id=0%3A1', name: 'Job listing'},
+  {link: 'https://www.figma.com/file/DHeWJbQ7KLfw2QnhlTfwe0/url-shortening-api-landing-page?node-id=0%3A1', name: 'Shortly'},
 ]
 
 // Generate Dropdown items
